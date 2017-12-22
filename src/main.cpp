@@ -3,9 +3,19 @@
 
 #ifndef TEST
 int main() {
+
     printf("Rule Breaker!!!\n");
     printf("5 + 2 = %d\n", addNumber(5, 2));
     printf("%d\n", getTriangleType(3, 4, 5));
+
+    int a;
+    printf("輸入石頭數量 : ");
+    scanf(" %d",&a);
+    dolo(a);
+    if(dolo(a) == -1)
+    printf("滾吧你這負債的窮逼");
+    else
+    printf("你共可以抽 %d次(5石一抽)");
     return 0;
 }
 #endif // TEST
@@ -35,4 +45,13 @@ int getTriangleType(int a, int b, int c) {
         return -1;
     }
     return -3;
+}
+
+int dolo(int a) {
+    if (a < 0) {
+        return -1;
+    }
+    else  {
+        return a/5;
+    }
 }
