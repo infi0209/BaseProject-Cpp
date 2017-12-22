@@ -13,6 +13,7 @@ void testdolo() {
     assert(dolo(10) == 2);
     assert(dolo(100) == 20);
     assert(dolo(19) == 3);
+    assert(dolo(-5) == -1);
 
 }
 
